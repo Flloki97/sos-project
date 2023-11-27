@@ -301,4 +301,52 @@
   .partners-carousel {
     position: relative;
     overflow: hidden;
+    margin-bottom: 40px;
   }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 40px;
+  }
+
+  .contact p {
+    text-align: center;
+  }
+
+.pad-b-10 {
+  padding-bottom: 10px;
+}
+
+.contact-inline {
+  display: flex;
+  /* gap: 30px; */
+  width: 100%;
+  justify-content: space-between;
+}
+
+.dp-f {
+  display: flex;
+}
+
+.email-info {
+  align-items: center;
+}
+
+.email-info ,
+.address-info ,
+.number-info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.email-info img,
+.address-info img,
+.number-info img {
+  width: 40px;
+  object-fit: contain;
+  margin-right: 30px;
+}
