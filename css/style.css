@@ -222,7 +222,7 @@ width: 50%;
 }
 
 img {
-min-height: 10vh;
+min-height: 0vh;
 }
 
 .about-uscontent .left-side img {
@@ -474,6 +474,66 @@ footer {
 
   .contact-inline {
     flex-direction: column;
+  }
+
+  .about-uscontent {
+    flex-direction: column;
+  }
+
+  .about-uscontent .left-side img {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
 }
+
+@media only screen and (max-width: 500px) {
+  .hero {
+    padding: 0 20px;
+  }
+
+  .about-us-section {
+    padding: 0 20px;
+    padding-bottom: 30px !important;
+  }
+
+  .middle-page-section {
+    margin: 0;
+  }
+
+  .partners-carousel {
+    margin-bottom: 30px;
+  }
+
+  .wave-divider {
+    height: 70px;
+    margin-top: -70px;
+  }
+
+  .wave-blue {
+    height: 65px;
+    margin-top: 0;
+  }
+
+  .services-section,
+  .middle-page-section,
+  .partners-carousel,
+  .contact {
+    padding: 0 20px;
+  }
+
+  .middle-page-section {
+    padding-bottom: 30px;
+  }
+
+  footer {
+    padding: 0 20px;
+  }
+
+  .hero {
+    height: 60vh;
+  }
+
 
 }
