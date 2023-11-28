@@ -400,17 +400,80 @@ footer {
 
 /*  Responsive  */
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {...}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
-
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
+@media only screen and (max-width: 878px) {
+  nav img {
+    min-height: 0vh;
+    max-width: 200px;
+  }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
+  .hero-content h1 {
+    font-size: 40px;
+  }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
+  .lets-talk {
+    font-size: 16px;
+  }
+
+  .list a {
+    padding-inline: 13px;
+  }
+
+  .right-side {
+    width: 50%;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .about-uscontent .left-side img {
+    width: 80%;
+  }
+
+  .grid-container {
+    gap: 20px;
+    /* grid-template-columns: repeat(1, 1fr); */
+  }
+
+  .grid-content {
+    padding-left: 10px;
+  }
+
+  .middle-page-content .left-side {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 667px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .middle-page-content {
+    flex-direction: column;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100% !important;
+  }
+
+  .middle-page-content .left-side {
+    border-radius: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .middle-page-content .right-side img {
+    border-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 2px 2px 7px 1px rgba(95, 95, 95, 0.25);
+  }
+
+  .contact-inline {
+    flex-direction: column;
+}
+
+}
