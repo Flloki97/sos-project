@@ -39,3 +39,30 @@ function openMenu() {
     }
   }
 }
+
+// window.addEventListener('load', function () {
+//   // Hide the loading animation
+//   document.querySelector('.loading-screen').style.display = 'none';
+
+//   // Display the content
+//   document.querySelector('.page-container').style.display = 'block';
+// });
+
+window.addEventListener('load', function () {
+  // Show the loading animation initially (assuming it's hidden by default)
+  document.querySelector('.loading-screen').style.display = 'block';
+
+  // Wait for 3 seconds before hiding the loading animation
+  setTimeout(function () {
+    // Start the fade-out animation for the loading screen
+    document.querySelector('.loading-screen').style.opacity = '0';
+
+    // After the fade-out animation (adjust the duration in CSS), hide the loading screen
+    setTimeout(function () {
+      document.querySelector('.loading-screen').style.display = 'none';
+
+      // Display the content (assuming there is a .page-container element)
+      document.querySelector('.page-container').style.display = 'block';
+    }, 500); // Adjust this value based on your CSS transition duration
+  }, 3000); // Wait for 3 seconds before starting the fade-out
+});

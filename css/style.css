@@ -123,7 +123,13 @@ padding: 0 40px;
 }
 
 .list a {
-padding-inline: 20px;
+  padding-inline: 20px;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s;
+}
+
+.list a:hover {
+  color: rgb(227 79 83);
 }
 
 nav {
@@ -618,13 +624,30 @@ ul.mobile-menu {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: transparent;
+    transition: all 0.3s;
   }
+  
+  .mobile-menu li:hover {
+    background: #525252;
+  }
+
+  .mobile-menu a {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
 
 }
 
 .mobile-menu li a {
   display: none;
+  
 }
+
 
 #menu-links-container a {
   display: block;
@@ -635,3 +658,83 @@ ul.mobile-menu {
 #menu-links-container.opened a {
   opacity: 1;
 }
+
+.loading-screen {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #9f3c3c;
+}
+
+.content {
+  display: none;
+}
+
+:root {
+	--hue: 223;
+	--bg: hsl(var(--hue),10%,90%);
+	--fg: hsl(var(--hue),10%,10%);
+    --pr-color:#fff;
+	/* font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320)); */
+}
+
+.pl {
+	display: block;
+	width: 6.25em;
+	height: 6.25em;
+}
+.pl__ring, .pl__ball {
+	animation: ring 2s ease-out infinite;
+    stroke: #ffffff
+}
+.pl__ball {
+	animation-name: ball;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: hsl(var(--hue),10%,10%);
+		--fg: hsl(var(--hue),10%,90%);
+	}
+}
+
+/* Animation */
+@keyframes ring {
+	from {
+		stroke-dasharray: 0 257 0 0 1 0 0 258;
+	}
+	25% {
+		stroke-dasharray: 0 0 0 0 257 0 258 0;
+	}
+	50%, to {
+		stroke-dasharray: 0 0 0 0 0 515 0 0;
+	}
+}
+@keyframes ball {
+	from, 50% {
+		animation-timing-function: ease-in;
+		stroke-dashoffset: 1;
+	}
+	64% {
+		animation-timing-function: ease-in;
+		stroke-dashoffset: -109;
+	}
+	78% {
+		animation-timing-function: ease-in;
+		stroke-dashoffset: -145;
+	}
+	92% {
+		animation-timing-function: ease-in;
+		stroke-dashoffset: -157;
+	}
+	57%, 71%, 85%, 99%, to {
+		animation-timing-function: ease-out;
+		stroke-dashoffset: -163;
+	}
+}
+
+.animate__animated .animate__fadeInUp {
+    --animate-delay: 0.9s;
+  }
