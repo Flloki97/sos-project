@@ -611,4 +611,27 @@ ul.mobile-menu {
     z-index: 4;
     transition: all 0.5s;
   }
+  
+  .mobile-menu li {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+.mobile-menu li a {
+  display: none;
+}
+
+#menu-links-container a {
+  display: block;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+#menu-links-container.opened a {
+  opacity: 1;
 }
