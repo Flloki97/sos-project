@@ -1,11 +1,37 @@
+@font-face {
+  font-family: RobotoBlack;
+  src: url(../fonts/Roboto-Black.ttf);
+}
+
+@font-face {
+  font-family: RobotoBold;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: RobotoLight;
+  src: url(../fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: RobotoMedium;
+  src: url(../fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+  font-family: RobotoR;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  min-height: 200vh;
-  font-family: Helvetica, Verdana, sans-serif;
+  /* min-height: 200vh; */
+  font-family: RobotoR !important;
 }
 nav {
   position: fixed;
@@ -508,7 +534,7 @@ footer {
 
   .wave-divider {
     height: 70px;
-    margin-top: -70px;
+    margin-top: -69px;
   }
 
   .wave-blue {
@@ -528,12 +554,46 @@ footer {
   }
 
   footer {
-    padding: 0 20px;
+    padding: 0 20px !important;
   }
 
   .hero {
     height: 60vh;
   }
 
+  nav {
+    padding: 5px 20px 5px 10px;
+  }
+
+  nav img {
+    min-height: 0vh !important;
+    max-width: 160px;
+  }
+
+}
+
+/* @media screen and (max-width: 500px), 
+       screen and (max-height: 700px) {
+  
+} */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+and (orientation: portrait) {
+  /* CSS styles specific to iPad portrait mode */
+  .hero {
+    height: 60vh;
+  }
+
+  .right-side {
+    width: 50%;
+  }
+
+  .grid-content {
+    padding-left: 10px;
+  }
+
+  nav img {
+    min-height: 0vh !important;
+  }
 
 }
