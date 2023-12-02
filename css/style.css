@@ -665,6 +665,8 @@ ul.mobile-menu {
   justify-content: center;
   align-items: center;
   background: #9f3c3c;
+  position: fixed;
+  z-index: 4;
 }
 
 .content {
