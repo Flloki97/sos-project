@@ -23,6 +23,9 @@
   src: url(../fonts/Roboto-Regular.ttf);
 }
 
+html{
+  scroll-behavior:smooth
+}
 
 * {
   box-sizing: border-box;
@@ -682,7 +685,8 @@ ul.mobile-menu {
 }
 
 .pl {
-	display: block;
+	display: flex;
+  margin: auto;
 	width: 6.25em;
 	height: 6.25em;
 }

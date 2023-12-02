@@ -50,7 +50,7 @@ function openMenu() {
 
 window.addEventListener('load', function () {
   // Show the loading animation initially (assuming it's hidden by default)
-  document.querySelector('.loading-screen').style.display = 'block';
+  document.querySelector('.loading-screen').style.display = 'flex';
 
   // Wait for 3 seconds before hiding the loading animation
   setTimeout(function () {
