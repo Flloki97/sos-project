@@ -23,7 +23,7 @@ function openMenu() {
 
   if (smallMenu.classList.contains('opened')) {
     smallMenu.style.height = "215px";
-    icon.src = "../img/close-menu.png";
+    icon.src = "../img/close-menu.webp";
 
     // Show the links
     for (var i = 0; i < links.length; i++) {
