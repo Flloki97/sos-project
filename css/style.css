@@ -151,7 +151,7 @@ object-fit: contain;
 
 .hero {
 height: 95vh;
-background-image: url(../img/hero-1.webp);
+background-image: url(../img/hero-1.png);
 background-position: 50% 70%;
 background-repeat: no-repeat;
 background-size: cover;
