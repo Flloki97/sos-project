@@ -31,7 +31,7 @@ function openMenu() {
     }
   } else {
     smallMenu.style.height = "0px";
-    icon.src = "../img/ham-menu.png";
+    icon.src = "../img/ham-menu.webp";
 
     // Hide the links
     for (var i = 0; i < links.length; i++) {
