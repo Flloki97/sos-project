@@ -66,3 +66,37 @@ window.addEventListener('load', function () {
     }, 500); // Adjust this value based on your CSS transition duration
   }); // Wait for 3 seconds before starting the fade-out
 });
+
+
+// animate content on viewport
+
+document.addEventListener('DOMContentLoaded', function() {
+  function isInViewport(element) {
+    var rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  function handleScroll() {
+    var elements = document.querySelectorAll('.animate-that');
+    elements.forEach(function(element) {
+      if (isInViewport(element) && !element.classList.contains('animate__animated')) {
+        element.classList.add('animate__animated', 'animate__fadeInLeft');
+      }
+    });
+  }
+
+  
+  // Attach the handleScroll function to the scroll event
+  window.addEventListener('scroll', handleScroll);
+  
+  // Initial check on page load
+  handleScroll();
+  
+
+});
+

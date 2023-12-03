@@ -741,5 +741,11 @@ ul.mobile-menu {
 }
 
 .animate__animated .animate__fadeInUp {
-    --animate-delay: 0.9s;
-  }
+  --animate-delay: 0.9s;
+}
+
+.animate-that {
+  opacity: 0;
+}
+
+
