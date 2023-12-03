@@ -64,5 +64,5 @@ window.addEventListener('load', function () {
       // Display the content (assuming there is a .page-container element)
       document.querySelector('.page-container').style.display = 'block';
     }, 500); // Adjust this value based on your CSS transition duration
-  }, 3000); // Wait for 3 seconds before starting the fade-out
+  }); // Wait for 3 seconds before starting the fade-out
 });
