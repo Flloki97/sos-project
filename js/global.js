@@ -1,19 +1,3 @@
-// function openMenu() {
-//     var mobileMenu = document.getElementById("menu-links-container").classList.toggle('opened');
-//     var smallMenu = document.getElementById("menu-links-container");
-//     var links = document.getElementById("links-wrapper");
-
-//     if(smallMenu.classList.contains('opened')) {
-//       smallMenu.style.height = "215px";
-//       document.getElementById("op-cl-menu").src = "../img/close-menu.png";
-//     } else {
-//       smallMenu.style.height = "0px";
-//       document.getElementById("op-cl-menu").src = "../img/ham-menu.png";
-      
-//     } 
-//   }
-
-
 function openMenu() {
   var smallMenu = document.getElementById("menu-links-container");
   var links = document.getElementById("menu-links-container").getElementsByTagName("a");
@@ -39,14 +23,6 @@ function openMenu() {
     }
   }
 }
-
-// window.addEventListener('load', function () {
-//   // Hide the loading animation
-//   document.querySelector('.loading-screen').style.display = 'none';
-
-//   // Display the content
-//   document.querySelector('.page-container').style.display = 'block';
-// });
 
 window.addEventListener('load', function () {
   // Show the loading animation initially (assuming it's hidden by default)
@@ -90,13 +66,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  
   // Attach the handleScroll function to the scroll event
   window.addEventListener('scroll', handleScroll);
-  
   // Initial check on page load
   handleScroll();
-  
-
 });
 
